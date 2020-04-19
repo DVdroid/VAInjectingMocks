@@ -32,7 +32,8 @@ class VAInjectingMocksTests: XCTestCase {
             var lastUrl: URL?
             var data: Data?
 
-            func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskProtocol {
+            func dataTask(with url: URL,
+                          completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskProtocol {
                 self.lastUrl = url
                 let response = HTTPURLResponse(url: url,
                                                statusCode: 200,

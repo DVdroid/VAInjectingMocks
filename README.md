@@ -11,8 +11,8 @@
 
 ## General info
 Demo iOS project to learn and implement, how to 
-1. How to pakage a bunch of files as framework to increase it's reusability.
-2.  Using build script to copy framework conditionally in the final app bundle which then will be injected into the code at runtime.
+1. Pakage a bunch of files as framework to increase it's reusability.
+2. Use build script to copy framework conditionally in the final app bundle which then will be injected into the code at runtime.
 
 
 ## Technologies

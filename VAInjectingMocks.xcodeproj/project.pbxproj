@@ -7,16 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D67E7640244C580C00B2F3F1 /* ToDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E763F244C580C00B2F3F1 /* ToDos.swift */; };
+		D67E7655244C77FA00B2F3F1 /* ToDosStub.h in Headers */ = {isa = PBXBuildFile; fileRef = D67E7653244C77FA00B2F3F1 /* ToDosStub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D67E765E244C78B800B2F3F1 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E7643244C696500B2F3F1 /* URLSessionMock.swift */; };
+		D67E765F244C78B800B2F3F1 /* URLSessionDataTask+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E7645244C744200B2F3F1 /* URLSessionDataTask+Extension.swift */; };
+		D67E7660244C78B800B2F3F1 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E7647244C74A700B2F3F1 /* URLSession+Extension.swift */; };
+		D67E7661244C78EF00B2F3F1 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = D67E764A244C767E00B2F3F1 /* posts.json */; };
 		D6A72B2F2445BCCE00DF56CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A72B2E2445BCCE00DF56CA /* AppDelegate.swift */; };
-		D6A72B312445BCCE00DF56CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A72B302445BCCE00DF56CA /* SceneDelegate.swift */; };
 		D6A72B332445BCCE00DF56CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A72B322445BCCE00DF56CA /* ViewController.swift */; };
 		D6A72B362445BCCE00DF56CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A72B342445BCCE00DF56CA /* Main.storyboard */; };
 		D6A72B382445BCD000DF56CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A72B372445BCD000DF56CA /* Assets.xcassets */; };
 		D6A72B3B2445BCD000DF56CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A72B392445BCD000DF56CA /* LaunchScreen.storyboard */; };
 		D6A72B462445BCD100DF56CA /* VAInjectingMocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A72B452445BCD100DF56CA /* VAInjectingMocksTests.swift */; };
+		D6A72B512445BD2400DF56CA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A72B502445BD2400DF56CA /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D67E7656244C77FA00B2F3F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6A72B232445BCCE00DF56CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D67E7650244C77FA00B2F3F1;
+			remoteInfo = ToDosStub;
+		};
 		D6A72B422445BCD100DF56CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6A72B232445BCCE00DF56CA /* Project object */;
@@ -26,10 +39,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D67E765D244C77FA00B2F3F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D67E763F244C580C00B2F3F1 /* ToDos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDos.swift; sourceTree = "<group>"; };
+		D67E7643244C696500B2F3F1 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		D67E7645244C744200B2F3F1 /* URLSessionDataTask+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask+Extension.swift"; sourceTree = "<group>"; };
+		D67E7647244C74A700B2F3F1 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		D67E764A244C767E00B2F3F1 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		D67E7651244C77FA00B2F3F1 /* ToDosStub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToDosStub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67E7653244C77FA00B2F3F1 /* ToDosStub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDosStub.h; sourceTree = "<group>"; };
+		D67E7654244C77FA00B2F3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67E7662244C84DA00B2F3F1 /* copy_stubs_framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = copy_stubs_framework.sh; sourceTree = "<group>"; };
 		D6A72B2B2445BCCE00DF56CA /* VAInjectingMocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VAInjectingMocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A72B2E2445BCCE00DF56CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6A72B302445BCCE00DF56CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D6A72B322445BCCE00DF56CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6A72B352445BCCE00DF56CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6A72B372445BCD000DF56CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,9 +72,17 @@
 		D6A72B412445BCD100DF56CA /* VAInjectingMocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VAInjectingMocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A72B452445BCD100DF56CA /* VAInjectingMocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VAInjectingMocksTests.swift; sourceTree = "<group>"; };
 		D6A72B472445BCD100DF56CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A72B502445BD2400DF56CA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D67E764E244C77FA00B2F3F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6A72B282445BCCE00DF56CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,11 +100,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D67E7649244C766000B2F3F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D67E764A244C767E00B2F3F1 /* posts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D67E7652244C77FA00B2F3F1 /* ToDosStub */ = {
+			isa = PBXGroup;
+			children = (
+				D67E7653244C77FA00B2F3F1 /* ToDosStub.h */,
+				D67E7654244C77FA00B2F3F1 /* Info.plist */,
+				D67E7643244C696500B2F3F1 /* URLSessionMock.swift */,
+				D67E7645244C744200B2F3F1 /* URLSessionDataTask+Extension.swift */,
+				D67E7647244C74A700B2F3F1 /* URLSession+Extension.swift */,
+				D67E7649244C766000B2F3F1 /* Resources */,
+			);
+			path = ToDosStub;
+			sourceTree = "<group>";
+		};
+		D67E7664244C8F1B00B2F3F1 /* build-script */ = {
+			isa = PBXGroup;
+			children = (
+				D67E7662244C84DA00B2F3F1 /* copy_stubs_framework.sh */,
+			);
+			path = "build-script";
+			sourceTree = "<group>";
+		};
 		D6A72B222445BCCE00DF56CA = {
 			isa = PBXGroup;
 			children = (
 				D6A72B2D2445BCCE00DF56CA /* VAInjectingMocks */,
 				D6A72B442445BCD100DF56CA /* VAInjectingMocksTests */,
+				D67E7652244C77FA00B2F3F1 /* ToDosStub */,
 				D6A72B2C2445BCCE00DF56CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +144,7 @@
 			children = (
 				D6A72B2B2445BCCE00DF56CA /* VAInjectingMocks.app */,
 				D6A72B412445BCD100DF56CA /* VAInjectingMocksTests.xctest */,
+				D67E7651244C77FA00B2F3F1 /* ToDosStub.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,12 +153,14 @@
 			isa = PBXGroup;
 			children = (
 				D6A72B2E2445BCCE00DF56CA /* AppDelegate.swift */,
-				D6A72B302445BCCE00DF56CA /* SceneDelegate.swift */,
 				D6A72B322445BCCE00DF56CA /* ViewController.swift */,
 				D6A72B342445BCCE00DF56CA /* Main.storyboard */,
 				D6A72B372445BCD000DF56CA /* Assets.xcassets */,
 				D6A72B392445BCD000DF56CA /* LaunchScreen.storyboard */,
 				D6A72B3C2445BCD000DF56CA /* Info.plist */,
+				D6A72B502445BD2400DF56CA /* NetworkManager.swift */,
+				D67E763F244C580C00B2F3F1 /* ToDos.swift */,
+				D67E7664244C8F1B00B2F3F1 /* build-script */,
 			);
 			path = VAInjectingMocks;
 			sourceTree = "<group>";
@@ -101,7 +176,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D67E764C244C77FA00B2F3F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67E7655244C77FA00B2F3F1 /* ToDosStub.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		D67E7650244C77FA00B2F3F1 /* ToDosStub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67E765A244C77FA00B2F3F1 /* Build configuration list for PBXNativeTarget "ToDosStub" */;
+			buildPhases = (
+				D67E764C244C77FA00B2F3F1 /* Headers */,
+				D67E764D244C77FA00B2F3F1 /* Sources */,
+				D67E764E244C77FA00B2F3F1 /* Frameworks */,
+				D67E764F244C77FA00B2F3F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDosStub;
+			productName = ToDosStub;
+			productReference = D67E7651244C77FA00B2F3F1 /* ToDosStub.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D6A72B2A2445BCCE00DF56CA /* VAInjectingMocks */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6A72B4A2445BCD100DF56CA /* Build configuration list for PBXNativeTarget "VAInjectingMocks" */;
@@ -109,10 +213,13 @@
 				D6A72B272445BCCE00DF56CA /* Sources */,
 				D6A72B282445BCCE00DF56CA /* Frameworks */,
 				D6A72B292445BCCE00DF56CA /* Resources */,
+				D67E765D244C77FA00B2F3F1 /* Embed Frameworks */,
+				D67E7663244C84F500B2F3F1 /* Copy stub framework */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D67E7657244C77FA00B2F3F1 /* PBXTargetDependency */,
 			);
 			name = VAInjectingMocks;
 			productName = VAInjectingMocks;
@@ -147,6 +254,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Vikash Anand";
 				TargetAttributes = {
+					D67E7650244C77FA00B2F3F1 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					D6A72B2A2445BCCE00DF56CA = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -171,11 +281,20 @@
 			targets = (
 				D6A72B2A2445BCCE00DF56CA /* VAInjectingMocks */,
 				D6A72B402445BCD100DF56CA /* VAInjectingMocksTests */,
+				D67E7650244C77FA00B2F3F1 /* ToDosStub */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D67E764F244C77FA00B2F3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67E7661244C78EF00B2F3F1 /* posts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6A72B292445BCCE00DF56CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,14 +314,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D67E7663244C84F500B2F3F1 /* Copy stub framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy stub framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${COPY_STUB_FRAMEWORK_SCRIPT_PATH}\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		D67E764D244C77FA00B2F3F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67E765E244C78B800B2F3F1 /* URLSessionMock.swift in Sources */,
+				D67E765F244C78B800B2F3F1 /* URLSessionDataTask+Extension.swift in Sources */,
+				D67E7660244C78B800B2F3F1 /* URLSession+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6A72B272445BCCE00DF56CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A72B512445BD2400DF56CA /* NetworkManager.swift in Sources */,
 				D6A72B332445BCCE00DF56CA /* ViewController.swift in Sources */,
 				D6A72B2F2445BCCE00DF56CA /* AppDelegate.swift in Sources */,
-				D6A72B312445BCCE00DF56CA /* SceneDelegate.swift in Sources */,
+				D67E7640244C580C00B2F3F1 /* ToDos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +368,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D67E7657244C77FA00B2F3F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D67E7650244C77FA00B2F3F1 /* ToDosStub */;
+			targetProxy = D67E7656244C77FA00B2F3F1 /* PBXContainerItemProxy */;
+		};
 		D6A72B432445BCD100DF56CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D6A72B2A2445BCCE00DF56CA /* VAInjectingMocks */;
@@ -244,6 +400,189 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D67E765B244C77FA00B2F3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B6LN4XWA2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToDosStub/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.va.ToDosStub;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D67E765C244C77FA00B2F3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B6LN4XWA2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToDosStub/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.va.ToDosStub;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D67E7665244C912D00B2F3F1 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Test;
+		};
+		D67E7666244C912D00B2F3F1 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_STUB_FRAMEWORK_SCRIPT_PATH = "${SRCROOT}/VAInjectingMocks/build-script/copy_stubs_framework.sh";
+				DEVELOPMENT_TEAM = B6LN4XWA2V;
+				INFOPLIST_FILE = VAInjectingMocks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.va.VAInjectingMocks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		D67E7667244C912D00B2F3F1 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6LN4XWA2V;
+				INFOPLIST_FILE = VAInjectingMocksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.va.VAInjectingMocksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VAInjectingMocks.app/VAInjectingMocks";
+			};
+			name = Test;
+		};
+		D67E7668244C912D00B2F3F1 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B6LN4XWA2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ToDosStub/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.va.ToDosStub;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Test;
+		};
 		D6A72B482445BCD100DF56CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -361,8 +700,10 @@
 		D6A72B4B2445BCD100DF56CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_STUB_FRAMEWORK_SCRIPT_PATH = "${SRCROOT}/VAInjectingMocks/build-script/copy_stubs_framework.sh";
 				DEVELOPMENT_TEAM = B6LN4XWA2V;
 				INFOPLIST_FILE = VAInjectingMocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -379,8 +720,10 @@
 		D6A72B4C2445BCD100DF56CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_STUB_FRAMEWORK_SCRIPT_PATH = "${SRCROOT}/VAInjectingMocks/build-script/copy_stubs_framework.sh";
 				DEVELOPMENT_TEAM = B6LN4XWA2V;
 				INFOPLIST_FILE = VAInjectingMocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,10 +784,21 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D67E765A244C77FA00B2F3F1 /* Build configuration list for PBXNativeTarget "ToDosStub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67E765B244C77FA00B2F3F1 /* Debug */,
+				D67E7668244C912D00B2F3F1 /* Test */,
+				D67E765C244C77FA00B2F3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D6A72B262445BCCE00DF56CA /* Build configuration list for PBXProject "VAInjectingMocks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6A72B482445BCD100DF56CA /* Debug */,
+				D67E7665244C912D00B2F3F1 /* Test */,
 				D6A72B492445BCD100DF56CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -454,6 +808,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6A72B4B2445BCD100DF56CA /* Debug */,
+				D67E7666244C912D00B2F3F1 /* Test */,
 				D6A72B4C2445BCD100DF56CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -463,6 +818,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6A72B4E2445BCD100DF56CA /* Debug */,
+				D67E7667244C912D00B2F3F1 /* Test */,
 				D6A72B4F2445BCD100DF56CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

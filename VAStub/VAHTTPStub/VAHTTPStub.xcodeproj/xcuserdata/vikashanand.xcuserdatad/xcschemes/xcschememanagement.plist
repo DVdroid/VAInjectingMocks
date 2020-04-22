@@ -4,25 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>VAInjectingMocks [Stub].xcscheme_^#shared#^_</key>
+		<key>VAHTTPStub.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
-		<key>VAInjectingMocks.xcscheme_^#shared#^_</key>
+		<key>VAHTTPStub_Test.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D6A72B2A2445BCCE00DF56CA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D6A72B402445BCD100DF56CA</key>
+		<key>D65945C9244DDA0B00EC7312</key>
 		<dict>
 			<key>primary</key>
 			<true/>

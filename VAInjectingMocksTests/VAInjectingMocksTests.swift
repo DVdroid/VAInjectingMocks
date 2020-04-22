@@ -8,7 +8,8 @@
 
 import XCTest
 @testable import VAInjectingMocks
-import ToDosStub
+import VAStub
+import VAHTTPStub
 
 class VAInjectingMocksTests: XCTestCase {
 
@@ -51,40 +52,28 @@ class VAInjectingMocksTests: XCTestCase {
             return
         }
 
-        let mainBundle = Bundle.main
-        let pathToStubFrameWork = mainBundle.builtInPlugInsURL?.appendingPathComponent("ToDosStub.framework")
-        if let pathToStubFrameWork = pathToStubFrameWork, let bundle = Bundle(url: pathToStubFrameWork) {
+        let session = URLSessionMock()
+        session.data = VAStubManager.data(forResource: "posts", withExtension: "json")
+        let expectation = XCTestExpectation(description: "Network opertion")
 
-            guard let dataUrl = bundle.url(forResource: "posts",
-                                           withExtension: "json") else { return }
-            let data = try? Data(contentsOf: dataUrl)
+        //When
+        NetworkManager.loadData(from: url,
+                                using: session,
+                                responseType: ToDos.self) { (result) in
+                                    guard let toDoObject = try? result.get() else {
+                                        XCTFail("Invalid response")
+                                        return
+                                    }
 
-            let session = URLSessionMock()
-            session.data = data
-            let expectation = XCTestExpectation(description: "Network opertion")
-
-            //When
-            NetworkManager.loadData(from: url,
-                                    using: session,
-                                    responseType: ToDos.self) { (result) in
-                                        guard let toDoObject = try? result.get() else {
-                                            XCTFail("Invalid response")
-                                            return
-                                        }
-
-                                        //Then
-                                        XCTAssertEqual(toDoObject.userId, 1)
-                                        XCTAssertEqual(toDoObject.id, 1)
-                                        XCTAssertEqual(toDoObject.title, "delectus aut autem")
-                                        XCTAssertEqual(toDoObject.completed, false)
-                                        expectation.fulfill()
-            }
-
-            wait(for: [expectation], timeout: 5.0)
-
-        } else {
-            XCTFail("Stub framework not found.")
+                                    //Then
+                                    XCTAssertEqual(toDoObject.userId, 1)
+                                    XCTAssertEqual(toDoObject.id, 1)
+                                    XCTAssertEqual(toDoObject.title, "delectus aut autem")
+                                    XCTAssertEqual(toDoObject.completed, false)
+                                    expectation.fulfill()
         }
+
+        wait(for: [expectation], timeout: 5.0)
     }
 
 }
